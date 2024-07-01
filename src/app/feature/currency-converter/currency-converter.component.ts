@@ -27,14 +27,6 @@ export class CurrencyConverterComponent {
       console.log(response)
     });
 
-    this.CurrencyConvertor.
-    convertCurrencyJson(19999.95,'GBP','EUR').pipe(takeUntil(this.ngUnsubscribe$)).
-    subscribe((response)=>{
-      console.log(response)
-    });
-
-
-    // https://openexchangerates.org/api/convert/19999.95/GBP/EUR?app_id=YOUR_APP_ID
   }
   ngOnDestroy(): void {
     this.ngUnsubscribe$.next();
